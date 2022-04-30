@@ -3,6 +3,9 @@ package main;
  /**Importacion de libreria Scanner, para capturar los datos que envia el usuario */
 import java.util.Scanner;
 
+/**Importacion de InputMismatchException, para geerar excepxion*/
+import java.util.InputMismatchException;
+
  /**Importacion de las clases Menu, Operations del paquete entities */
 import entities.Menu;
 import entities.Operations;
