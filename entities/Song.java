@@ -170,7 +170,7 @@ public class Song {
 	/** Sobreescritura del metodo toString para retornar la informacion de un objeto con los atributos respectivos  */
 	@Override 
 	public String toString() {
-		return "Song [title=" + title + ", id=" + id + ", date=" + date + ", time=" + time + ", gender=" + gender
-				+ ", cover=" + cover + ", description=" + description + "]";
+		return "Nombre de la cancion=" + title + "   Id=" + id + "   Fecha=" + date + "   Duracion=" + time + "   Genero=" + gender
+				+ "   Caratula=" + cover + "   Descripcion=" + description + "]";
 	}
 }
