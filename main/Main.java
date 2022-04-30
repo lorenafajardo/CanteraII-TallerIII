@@ -34,10 +34,13 @@ public class Main {
 		/** Inicializacion de la variable option*/
 		int option = 0;
 		
+		/** Try -Catch: Utilizado para generar la excepcion InputMismatchException, que permita ingresar solamente las opciones numericas */
+		try{
+			
 		/** Ciclo do-while: Utilizado para la repeticion del menu hasta que se cumpla la condicion de salir, 
 		 * que corresponde a option =5
 		 */
-		do {
+			do {
 				/** Llamado del metodo showMenu, para que el usuario visualice la biblioteca de canciones */
 			menu.showMenu(); 
 			option = sc.nextInt();
@@ -69,12 +72,15 @@ public class Main {
 			
 			/**Condicional que genera error al ingresar una opcion de numero incorrecta   */
 			if(option !=1 && option !=2 && option !=3 && option !=4 && option !=5 ){
-				System.out.println("Opci�n incorrecta");
+				System.out.println("Opción incorrecta");
 			}
 			
 		} while (option != 5);
 		System.out.println("El programa ha finalizado");
+			
+		}catch(InputMismatchException ex) {
+            	System.out.println("Debe ingresar un número, no se aceptan caracteres diferentes");	
 	}
-
+    }
 }
 
